@@ -90,5 +90,13 @@ public class ReserveSeat {
 
             int choice;
 
+            if (choice == 1) {
+
+            }
+        }
+    }
+}
+
+
 
 
