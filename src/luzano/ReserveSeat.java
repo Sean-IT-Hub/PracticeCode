@@ -110,7 +110,7 @@ public class ReserveSeat {
                 sc.nextLine();
                 System.out.print("Enter seat to cancel (e.g. A1): ");
                 String input = sc.nextLine().toUpperCase();
-                
+
                 int row = input.charAt(0) - 'A';
                 int col = input.charAt(1) - '1';
 
