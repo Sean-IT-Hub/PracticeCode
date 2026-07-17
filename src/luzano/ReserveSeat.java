@@ -77,8 +77,6 @@ public class ReserveSeat {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        initializeSeats();
-
         while (true) {
             System.out.println("\n=== MENU ===");
             System.out.println("1. View Seats");
@@ -90,5 +88,9 @@ public class ReserveSeat {
 
             int choice;
 
+        }
+
+    }
+}
 
             
