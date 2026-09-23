@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Grade Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Grade Tracker</h1>
+
+        <div class="form-section">
+
+            <label for="studentName">Student Name</label>
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Student name"
+            >
+
+            <label for="studentGrade">Grade</label>
+            <input
+                type="number"
+                id="studentGrade"
+                placeholder="Grade (0-100)"
+                min="0"
+                max="100"
+            >
+
+            <button id="addBtn">Add Student</button>
+
+        </div>
+
+
+        <div class="list-section">
+
+            <h2>Students</h2>
+
+            <ul id="studentList"></ul>
+
+        </div>
+
+
+        <div class="statistics">
+
+            <h2>Class Statistics</h2>
+
+            <p>
+                Average:
+                <span id="avgDisplay">-</span>
+            </p>
+
+            <p>
+                Highest:
+                <span id="highDisplay">-</span>
+            </p>
+
+            <p>
+                Lowest:
+                <span id="lowDisplay">-</span>
+            </p>
+
+            <p>
+                Passing (75 and above):
+                <span id="passDisplay">-</span>
+            </p>
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button id="sortBtn">
+                Sort by Grade (High to Low)
+            </button>
+
+            <button id="clearBtn">
+                Clear All
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
