@@ -124,6 +124,11 @@ COMMIT;
 
 select * from enrollment;
 
+SELECT *
+FROM student
+CROSS JOIN enrollment
+ORDER BY student.id;
+
 SELECT s.id, s.first_name, s.last_name, c.code, c.title, e.enrolled_on
 FROM   student s
 JOIN   enrollment e ON e.student_id = s.id
