@@ -1,0 +1,30 @@
+drive c, dev (folder name), workspace and db_home (folder name), then extract to db.
+
+click setup, next up to typical install {
+
+change the global databasename to "oracle"
+
+password to Changeme0 and confirm and install 
+}
+
+cmd to drive c
+
+type: sqlplus / as sysdba
+
+
+developer < extraxt to dev >
+click sqldeveloper and the app 
+
+new database connection, name oracle
+
+username oracle, and password
+
+change role to sysdba
+
+change the sid to oracle then connect 
+
+
+
+
+
+
