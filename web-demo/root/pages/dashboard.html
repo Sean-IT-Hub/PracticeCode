@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoCS Video Rental - Dashboard</title>
+    <link rel="stylesheet" href="../sytles/dashboard.css">
+    <script src="../scripts/dashboard.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">RoCS Dashboard</div>
+        <div class="user-info">
+            <span>Welcome, <strong id="usernameDisplay">Admin</strong></span>
+            <button id="logoutBtn" class="btn-logout">Logout</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Stats Overview -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Movies</h3>
+                <p id="totalMovies">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Available</h3>
+                <p id="availableMovies">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Rented Out</h3>
+                <p id="rentedMovies">0</p>
+            </div>
+        </section>
+
+        <!-- Movie Catalog Table -->
+        <section class="catalog-section">
+            <div class="section-header">
+                <h2>Video Catalog</h2>
+                <input type="text" id="searchInput" placeholder="Search movies by title or genre...">
+            </div>
+            <table class="movie-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Rental Rate</th>
+                        <th>Status</th>
+                        <th>Renter</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="movieTableBody">
+                    <!-- Populated dynamically via JS -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
